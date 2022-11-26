@@ -14,6 +14,9 @@ get('/', function (req, res) {
 get('/sinan', (req, res) => {
     res.send("sinan was here");
 }).
+get('/c', (req, res) => {
+    res.send("c was here");
+}).
 post('/test', (req, res) => {
     const responseBody = {};
     responseBody.greetings = `Welcome ${req.body.name.toUpperCase()}`;
